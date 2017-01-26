@@ -1,0 +1,37 @@
+{
+  "name": "http-intercept",
+  "version": "1.0.0",
+  "description": "Intercepts node http.request. Allows conditional request modification.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./index.spec.js"
+  },
+  "author": "Jeff Wilde",
+ "license": "(MIT OR Apache-2.0)" ,
+  "dependencies": {
+    "fast-memoize": "^2.0.2",
+    "lodash": "^4.17.4",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "tape": "^4.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gofreddo/http-intercept.git"
+  },
+  "keywords": [
+    "node",
+    "http",
+    "intercept"
+  ],
+  "contributors": [{
+    "name": "Jeff Wilde",
+    "email": "jeff.wilde@gmail.com"
+  }],
+ "bugs": {
+  "url": "https://github.com/gofreddo/http-intercep/issues"
+}
+}

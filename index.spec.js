@@ -1,0 +1,1 @@
+const httpIntercept = require('./http-intercept/index.spec');
