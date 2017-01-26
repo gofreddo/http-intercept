@@ -1,6 +1,6 @@
 {
   "name": "node-http-intercept",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Intercepts node http.request. Allows conditional request modification.",
   "main": "index.js",
   "scripts": {
