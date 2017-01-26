@@ -1,1 +1,1 @@
-const httpIntercept = require('./http-intercept/index.spec');
+const httpIntercept = require('./lib/index.spec'); // eslint-disable-line no-unused-vars

@@ -7,7 +7,7 @@
     "test": "node ./index.spec.js"
   },
   "author": "Jeff Wilde",
- "license": "(MIT OR Apache-2.0)" ,
+  "license": "(MIT OR Apache-2.0)",
   "dependencies": {
     "fast-memoize": "^2.0.2",
     "lodash": "^4.17.4",
@@ -16,6 +16,9 @@
   "devDependencies": {
     "eslint": "^3.14.1",
     "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
     "tape": "^4.6.3"
   },
   "repository": {
@@ -27,11 +30,13 @@
     "http",
     "intercept"
   ],
-  "contributors": [{
-    "name": "Jeff Wilde",
-    "email": "jeff.wilde@gmail.com"
-  }],
- "bugs": {
-  "url": "https://github.com/gofreddo/http-intercep/issues"
-}
+  "contributors": [
+    {
+      "name": "Jeff Wilde",
+      "email": "jeff.wilde@gmail.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/gofreddo/http-intercep/issues"
+  }
 }
