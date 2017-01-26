@@ -9,7 +9,7 @@
   "author": "Jeff Wilde",
   "license": "(MIT OR Apache-2.0)",
   "dependencies": {
-    "fast-memoize": "^2.0.2",
+    "fast-memoize": "git+https://github.com/gofreddo/fast-memoize.js.git",
     "lodash": "^4.17.4",
     "request": "^2.79.0"
   },
