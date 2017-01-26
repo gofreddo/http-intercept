@@ -1,6 +1,6 @@
 {
-  "name": "http-intercept",
-  "version": "1.0.0",
+  "name": "node-http-intercept",
+  "version": "1.0.1",
   "description": "Intercepts node http.request. Allows conditional request modification.",
   "main": "index.js",
   "scripts": {
@@ -38,5 +38,6 @@
   ],
   "bugs": {
     "url": "https://github.com/gofreddo/http-intercep/issues"
-  }
+  },
+  "readme": "README.md"
 }
