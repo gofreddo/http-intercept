@@ -13,7 +13,86 @@ $ npm i http-intercept --save-dev
 ## Usage
 
 ```js
-var http-intercept = require('http-intercept');
+  const httpIntercept = require('http-intercept');
+  const options = {
+    hostname: 'google.com',
+    port: 80,
+    path: '/upload',
+    method: 'get',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+  };
+
+  const interceptOptions = {
+    searchValue: 'google',
+    replaceValue: 'bing',
+    callback: (newOptions) => {
+      // newOptions.hostname ==='bing.com
+    },
+  };
+
+  httpIntercept(interceptOptions);
+
+  http.request(options);
+```
+
+
+```js
+  const httpIntercept = require('http-intercept');
+  const options = {
+    hostname: 'google.com',
+    port: 80,
+    path: '/upload',
+    method: 'get',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+  };
+
+  const interceptOptions = {
+    searchValue: 'google',
+    replaceValue: 'bing',
+    callback: (newOptions) => {
+      // newOptions is unchanged because predicate fails.
+    },
+    predicate: () => false,
+  };
+
+  httpIntercept(interceptOptions);
+
+  http.request(options);
+```
+
+
+```js
+  const httpIntercept = require('http-intercept');
+  const options = {
+    hostname: 'google.com',
+    port: 80,
+    path: '/upload',
+    method: 'get',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+  };
+
+  const interceptOptions = {
+    searchAndReplaceValues: [{
+      google: 'bing',
+    },
+    {
+      '.com': '.org',
+    },
+    ],
+    callback: (newOptions) => {
+      // hostname is now 'bing.org'
+    },
+  };
+
+  httpIntercept(interceptOptions);
+
+  http.request(options);
 ```
 
 ## Running tests
